@@ -1,4 +1,8 @@
-<p align="https://www.image2url.com/r2/default/images/1777333917440-ad7246de-48f5-4dd0-8470-fc5b647e090d.png">
+<p align="center">
+  <img src="https://www.image2url.com/r2/default/images/1777333917440-ad7246de-48f5-4dd0-8470-fc5b647e090d.png" width="100%">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/version-1.0.0-4f46e5?style=for-the-badge">
   <img src="https://img.shields.io/badge/node-16.9%2B-22c55e?style=for-the-badge">
   <img src="https://img.shields.io/badge/discord.js-v14-5865F2?style=for-the-badge">
