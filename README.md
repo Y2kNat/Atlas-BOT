@@ -67,72 +67,77 @@ sequenceDiagram
 
 ---
 
-✦ 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎
+## ✦ 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎
 
-🤖 Slash Commands (Owner)
+### 🤖 Slash (Owner)
 
-Comando Descrição
-/houseregister #canal Configura o canal onde o botão de registro aparece
-/housechannel #canal Configura o canal onde os imóveis registrados são publicados
+| Comando | Descrição |
+|---------|-----------|
+| `/houseregister #canal` | Define o canal do botão de registro |
+| `/housechannel #canal` | Define o canal onde os imóveis aparecem |
 
 ---
 
-🏠 Comandos de Prefixo ;
+### 📋 Consultas
 
-📋 Consultas
+| Comando | Descrição |
+|---------|-----------|
+| `;help` | Central de ajuda completa |
+| `;list [bairro]` | Lista imóveis (filtro opcional por bairro) |
+| `;search <termo>` | Busca imóvel por rua ou ID |
+| `;info <id>` | Detalhes de um imóvel específico |
+| `;stats` | Estatísticas gerais do servidor |
+| `;neighborhoods` | Lista os bairros disponíveis |
+| `;minhasprops` | Seus próprios imóveis registrados |
+| `;vizinhanca <bairro>` | Imóveis de um bairro específico |
 
-Comando Descrição
-;help Central de ajuda completa
-;list [bairro] Lista imóveis (opcional: filtrar por bairro)
-;search <termo> Busca imóvel por rua ou ID
-;info <id> Exibe detalhes de um imóvel específico
-;stats Mostra estatísticas do servidor
-;neighborhoods Lista bairros disponíveis
-;minhasprops Seus imóveis registrados
-;vizinhanca <bairro> Lista imóveis de um bairro
+### 📝 Status RP
 
-📝 Status RP
+| Comando | Descrição |
+|---------|-----------|
+| `;status <id> <status>` | Altera status (disponivel/construcao/abandonada/reforma) |
+| `;reformar <id>` | Atalho para "Em Reforma" |
+| `;abandonar <id>` | Atalho para "Abandonada" |
 
-Comando Descrição
-;status <id> <status> Altera status (disponivel/construcao/abandonada/reforma)
-;reformar <id> Atalho para "Em Reforma"
-;abandonar <id> Atalho para "Abandonada"
+### 💥 Gangues
 
-💥 Gangues
+| Comando | Descrição | Permissão |
+|---------|-----------|-----------|
+| `;gangue criar <nome> <@dono>` | Cria uma gangue | Owner |
+| `;gangue deletar <nome>` | Deleta uma gangue | Owner |
+| `;gangue info <nome>` | Informações da gangue | — |
+| `;gangue list` | Lista todas as gangues | — |
+| `;gangue vincular <id> <gangue>` | Vincula imóvel à gangue | Dono da gangue |
+| `;gangue desvincular <id>` | Remove vínculo do imóvel | Dono da gangue |
+| `;gangue membro add <@user> <gangue>` | Adiciona membro | Dono da gangue |
+| `;gangue membro remove <@user> <gangue>` | Remove membro | Dono da gangue |
+| `;gangue propriedades <nome>` | Lista imóveis da gangue | — |
 
-Comando Descrição Permissão
-;gangue criar <nome> <@dono> Cria uma gangue Owner
-;gangue deletar <nome> Deleta uma gangue Owner
-;gangue info <nome> Informações da gangue -
-;gangue list Lista todas as gangues -
-;gangue vincular <id> <gangue> Vincula imóvel à gangue Dono da gangue
-;gangue desvincular <id> Remove vínculo do imóvel Dono da gangue
-;gangue membro add <@user> <gangue> Adiciona membro Dono da gangue
-;gangue membro remove <@user> <gangue> Remove membro Dono da gangue
-;gangue propriedades <nome> Lista imóveis da gangue -
+### 👮 Polícia
 
-👮 Polícia
+| Comando | Descrição | Permissão |
+|---------|-----------|-----------|
+| `;policia cargo add @cargo` | Adiciona cargo policial | Owner |
+| `;policia cargo remove @cargo` | Remove cargo policial | Owner |
+| `;policia cargos` | Lista cargos policiais | — |
+| `;interditar <id> <motivo>` | Interdita um imóvel | Policial |
+| `;investigar <id>` | Coloca sob investigação | Policial |
+| `;liberar <id>` | Libera imóvel interditado | Policial |
 
-Comando Descrição Permissão
-;policia cargo add @cargo Adiciona cargo policial Owner
-;policia cargo remove @cargo Remove cargo policial Owner
-;policia cargos Lista cargos policiais -
-;interditar <id> <motivo> Interdita um imóvel Policial
-;investigar <id> Coloca sob investigação Policial
-;liberar <id> Libera imóvel interditado Policial
+### 🎭 Ações RP
 
-🎭 Ações RP
+| Comando | Descrição |
+|---------|-----------|
+| `;invadir <id>` | Registra invasão e notifica o dono |
 
-Comando Descrição
-;invadir <id> Registra invasão e notifica o dono do imóvel
+### 🔧 Administrativo (Owner)
 
-🔧 Administrativo (Owner)
-
-Comando Descrição
-;delete <id> Remove um imóvel do sistema
-;backup create Cria backup manual
-;backup list Lista backups disponíveis
-;export Exporta todos os dados em JSON
+| Comando | Descrição |
+|---------|-----------|
+| `;delete <id>` | Remove um imóvel do sistema |
+| `;backup create` | Cria backup manual |
+| `;backup list` | Lista backups disponíveis |
+| `;export` | Exporta todos os dados em JSON |
 
 ---
 
