@@ -12,7 +12,7 @@
 
 <br>
 
-<h1 align="center"> 𝙰𝚝𝚕𝚊𝚜 𝚁𝙿 • 𝙱𝙾𝚃</h1>
+<h1 align="center"> 𝙰𝚝𝚕𝚊𝚜 • 𝙱𝙾𝚃</h1>
 
 <p align="center">
   Sistema de registro de imóveis para servidores de Roleplay – gerencie propriedades, gangues e ações policiais.
